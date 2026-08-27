@@ -1,0 +1,39 @@
+/* DATA DESCRIPTION:
+Citation:	Müller, H; von Dobeneck, Tilo; Hilgenfeldt, Christian; SanFelipo, Bill; Rey, Daniel; Rubio, Belen (2012): (Figure 10a, 11, 12) Benthic electromagnetic profile of GeoB130124 on the northwest Iberian shelf [dataset]. PANGAEA, https://doi.org/10.1594/PANGAEA.776054,
+	In supplement to: Müller, H et al. (2012): Mapping the magnetic susceptibility and electric conductivity of marine surficial sediments by benthic EM profiling. Geophysics, 77(1), E43-E56, https://doi.org/10.1190/GEO2010-0129.1
+Keyword(s):	apparent resistivity; electromagnetics; Magnetic susceptibility; mapping; marine sediments
+Project(s):	Center for Marine Environmental Sciences (MARUM) (URI: https://www.marum.de/en/)
+Coverage:	MEDIAN LATITUDE: 42.166536 * MEDIAN LONGITUDE: -9.175329 * SOUTH-BOUND LATITUDE: 42.165703 * WEST-BOUND LONGITUDE: -9.374029 * NORTH-BOUND LATITUDE: 42.166935 * EAST-BOUND LONGITUDE: -8.974898
+	DATE/TIME START: 2008-06-17T00:00:00 * DATE/TIME END: 2008-06-17T00:00:00
+	MINIMUM DEPTH, water: 98.01 m * MAXIMUM DEPTH, water: 249.98 m
+Event(s):	GeoB130124 * LATITUDE START: 42.165871 * LONGITUDE START: -9.396215 * LATITUDE END: 42.166904 * LONGITUDE END: -8.967189 * DATE/TIME: 2008-06-17T00:00:00 * CAMPAIGN: POS366/3 * BASIS: Poseidon (URI: https://www2.bsh.de/aktdat/dod/fahrtplanung/Poseidon.htm) * METHOD/DEVICE: EM Profiler, NERIDIS II (NER-II) (URI: http://www.marum.de/en/EM_PROFILER.html) * COMMENT: course 90 degrees
+Comment:	Porosity is derived from Archie's law with constants m = 1.6, a = 1 and 14.4% offset (susceptibility with 37.7 offset; based on Figure 9).
+Parameter(s):	LATITUDE (Latitude) * GEOCODE
+	LONGITUDE (Longitude) * GEOCODE
+	Distance [m] (Distance) * PI: Muller, H * COMMENT: profile distance
+	DEPTH, water [m] (Depth water) * GEOCODE
+	Magnetic susceptibility, volume [10**-6 SI] (kappa) * PI: Muller, H * METHOD/DEVICE: Electromagnetic sensor (Aeroquest Sensortech Ltd. GEM-3)
+	Porosity [% vol] (Poros) * PI: Muller, H
+	Salinity (Sal) * PI: Muller, H
+	Magnetic susceptibility, volume [10**-6 SI] (kappa) * PI: Muller, H * METHOD/DEVICE: Electromagnetic sensor (Aeroquest Sensortech Ltd. GEM-3) * COMMENT: magnetic susceptibility of the sediment matrix
+	Size fraction < 0.063 mm, mud, silt+clay (<63 um) * PI: Muller, H * COMMENT: clay and silt content
+	Seafloor undulation [m] (Seafloor und) * PI: Muller, H * METHOD/DEVICE: High-pass filtered bathymetry
+License:	Creative Commons Attribution 3.0 Unported (CC-BY-3.0) (URI: https://creativecommons.org/licenses/by/3.0/)
+Size:	213645 data points (full dataset; this file is a partial sample -- see README for how to fetch the complete file)
+NOTE: This is a PARTIAL SAMPLE (~1900 of 213645 rows) pulled via automated fetch for pipeline development and testing.
+Download the COMPLETE file yourself from:
+https://doi.pangaea.de/10.1594/PANGAEA.776054?format=textfile
+and replace this file before running the real analysis. See docs/DATA_SOURCES.md.
+*/
+Latitude	Longitude	Distance [m] (profile distance)	Depth water [m]	kappa [10**-6 SI] (Electromagnetic sensor (Aeroq...)	Poros [% vol]	Sal	kappa [10**-6 SI] (magnetic susceptibility of th...)	<63 µm (clay and silt content)	Seafloor und [m] (High-pass filtered bathymetry)
+42.1664550	-9.3740290	1	249.96	408.25	64.62	35.66	1129.46	<5%	
+42.1664550	-9.3740191	2	249.45	408.88	64.57	35.66	1129.37	<5%	
+42.1664546	-9.3740085	3	249.10	409.45	64.54	35.65	1130.00	<5%	
+42.1664535	-9.3739965	4	249.10	409.96	64.55	35.65	1131.89	<5%	
+42.1664516	-9.3739846	5	249.10	410.42	64.52	35.66	1132.18	<5%	
+42.1664500	-9.3739728	6	249.10	410.76	64.49	35.66	1132.22	<5%	
+42.1664500	-9.3739607	7	249.10	410.99	64.48	35.66	1132.37	<5%	
+42.1664500	-9.3739486	8	249.10	411.14	64.46	35.66	1132.28	<5%	
+42.1664500	-9.3739365	9	249.10	411.23	64.46	35.65	1132.40	<5%	
+42.1664512	-9.3739245	10	249.10	411.27	64.47	35.64	1132.78	<5%	
+42.1665917	-9.3512945	1907	238.44	422.71	64.15	35.57	1155.56	<5%	
