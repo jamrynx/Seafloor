@@ -13,8 +13,8 @@ profiler "Neridis II" during cruise POS366/3 (2008):
 
 | Profile    | DOI                                    | Rows    | File to download |
 |------------|-----------------------------------------|---------|-------------------|
-| GeoB130124 | https://doi.org/10.1594/PANGAEA.776054 | 213,645 | `data/raw/GeoB130124_full.tab` |
-| GeoB130106 | https://doi.org/10.1594/PANGAEA.776055 | (check page) | `data/raw/GeoB130106_full.tab` |
+| GeoB130124 | https://doi.org/10.1594/PANGAEA.776054 | 32,944 | `data/raw/GeoB130124_full.tab` |
+| GeoB130106 | https://doi.org/10.1594/PANGAEA.776055 | 17,273 | `data/raw/GeoB130106_full.tab` |
 
 ### How to download the COMPLETE files (must be done manually)
 
@@ -82,3 +82,9 @@ CC-BY-3.0 requires attribution. Always cite:
 > Rubio, B. (2012): Mapping the magnetic susceptibility and electric
 > conductivity of marine surficial sediments by benthic EM profiling.
 > Geophysics, 77(1), E43-E56. https://doi.org/10.1190/GEO2010-0129.1
+
+## Downloaded files vs PANGAEA header counts
+
+Both full files were downloaded manually and checked on 2026-10-29. The PANGAEA header of each file states a larger "Size" (213,645 and 103,638 data points) than the number of rows the downloaded file actually contains (32,944 and 17,273). All analysis here uses the rows actually in the downloaded files. The full `.tab` files are git-ignored (see `.gitignore`); the derived feature tables are committed under `data/processed/`.
+
+The files include a clay/silt grain-size class per reading (<5%, 5-25%, 25-50%, 50-90%, >90%). It is used as a sediment-type reference for Objective 3. It is not an independent mineral-deposit survey.

@@ -25,7 +25,7 @@ Status legend: [ ] todo · [~] in progress · [x] done
 
 ## Phase 1 — Data acquisition & understanding
 **Target: Sept 8 – Sept 14 (Week 1)**
-- [ ] Manually download full GeoB130124 + GeoB130106 .tab files from PANGAEA
+- [x] Manually download full GeoB130124 + GeoB130106 .tab files from PANGAEA
       (see docs/DATA_SOURCES.md) and place in data/raw/.
 - [ ] Exploratory data analysis: plot profiles, check ranges/units, look for
       missing values, check the two profiles for consistency.
@@ -36,23 +36,23 @@ Status legend: [ ] todo · [~] in progress · [x] done
 
 ## Phase 2 — Feature engineering
 **Target: Sept 15 – Sept 21 (Week 2)**
-- [ ] Clean data: handle categorical <63µm field, missing seafloor
+- [x] Clean data: handle categorical <63µm field, missing seafloor
       undulation values, sensor noise smoothing (moving average / outlier
       rejection) to simulate "low-cost sensor" conditions per objective 1.
-- [ ] Derive apparent conductivity feature from Porosity + Salinity via
+- [x] Derive apparent conductivity feature from Porosity + Salinity via
       Archie's Law (documented formula, cited).
-- [ ] Window the continuous profile into fixed-length segments (e.g. every
+- [x] Window the continuous profile into fixed-length segments (e.g. every
       N meters of distance) and extract per-segment features: mean, std,
       peak anomaly, gradient for magnetic susceptibility and conductivity.
-- [ ] Standardize/normalize features (z-score) before distance computation.
-- [ ] Output clean feature table to data/processed/features.csv.
+- [x] Standardize/normalize features (z-score) before distance computation.
+- [x] Output clean feature table to data/processed/features.csv.
 
 ## Phase 3 — Distance metric & clustering pipeline
 **Target: Sept 22 – Oct 5 (Weeks 3-4)**
-- [ ] Implement pairwise distance computation: Euclidean and Cosine.
-- [ ] Implement Hierarchical Agglomerative Clustering (primary method) with
+- [x] Implement pairwise distance computation: Euclidean and Cosine.
+- [x] Implement Hierarchical Agglomerative Clustering (primary method) with
       both metrics; generate dendrograms.
-- [ ] Implement K-Means on L2-normalized vectors as secondary comparison
+- [x] Implement K-Means on L2-normalized vectors as secondary comparison
       (document why this approximates cosine clustering).
 - [ ] Optional: DBSCAN as a third comparison for outlier/noise handling.
 - [ ] Determine number of clusters (elbow method / dendrogram cut / domain
@@ -63,9 +63,9 @@ Status legend: [ ] todo · [~] in progress · [x] done
 - [ ] Compare Euclidean vs Cosine groupings: visualize cluster assignments
       along the spatial profile (map/plot), quantify agreement (e.g.
       Adjusted Rand Index between the two clusterings).
-- [ ] Internal validation: silhouette score, Davies-Bouldin index for each
+- [~] Internal validation: silhouette score, Davies-Bouldin index for each
       metric/method combination.
-- [ ] Objective 3 validation: attempt cross-reference against any available
+- [~] Objective 3 validation: attempt cross-reference against any available
       external deposit-zone reference; if not meaningfully applicable to
       this survey region, state that explicitly and rely on internal
       validation + geological plausibility (do clusters align with known
@@ -101,3 +101,7 @@ Status legend: [ ] todo · [~] in progress · [x] done
   `v1.0-submission`.
 - See `docs/COMMIT_CHECKLIST.md` for the specific commit-by-commit plan
   matched to each phase above.
+
+## Progress note (2026-10-29)
+
+The roadmap slipped: the full datasets were only obtained in mid-October, so data acquisition, feature engineering and a first clustering pass were all completed in one late push (one combined commit, dated when it was actually made). Not yet done: EDA plots, choosing k (elbow/dendrogram), figures, and the report. Phase 0 supervisor sign-off is still unticked because it has not been confirmed.
